@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина | Духи.ру</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/Korzin.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <img src="./images/index_icons/logomp.png" alt="" />
+          </a>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="analytics.html">Каталог</a></li>
+              <li><a href="contacts.html">Личный кабинет</a></li>
+              <li><a href="management.html">Администратор</a></li>
+            </ul>
+          </nav>
+          <div class="btn-into" id="cart-link">
+            <a href="./korzin.html">
+              <img src="./images/корзина22.png" alt="into" width="60" />
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+          <div class="dark">
+            <button class="lightdark">
+              <img
+                src="./images/7a5b60e3effb9a72053fbf86e9e6012a.png"
+                alt=""
+                width="30"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h2 class="section-title">Ваша корзина</h2>
+        <div id="cart-items" class="cart-container">
+          <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="cart-total">
+          <h3>Итого: <span id="total-price">0₽</span></h3>
+          <button id="checkout-btn" class="btn">Оформить заказ</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <img src="./images/index_icons/logomp.png" alt="" />
+            <p>
+              Мы не просто продаем ароматизаторы и парфюмерные композиции – мы
+              <br />стремимся сделать мир лучше и ароматнее!
+            </p>
+            <div class="social-links">
+              <a href="#">
+                <img src="images/index_icons/vk-icon.png" alt="ВК" width="40" />
+              </a>
+              <a href="#">
+                <img
+                  src="images/index_icons/whatsapp-icon.png"
+                  alt="WhatsApp"
+                  width="40"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/index_icons/instagram-icon.png"
+                  alt="Instagram"
+                  width="40"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Разделы</h3>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="analytics.html">Каталог</a></li>
+              <li><a href="contacts.html">Личный кабинет</a></li>
+              <li><a href="management.html">Панель администратора</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> г. Альметьевск, ул.
+                Ленина, 52
+              </li>
+              <li><i class="fas fa-phone"></i> +7 (919) 472-22-33</li>
+              <li><i class="fas fa-envelope"></i> aromat-almet@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 Духи.ру. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/korzin.js"></script>
+  </body>
+</html>

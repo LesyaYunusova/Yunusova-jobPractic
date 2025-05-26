@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет| Духи.ру</title>
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <img src="./images/index_icons/logomp.png" alt="" />
+          </a>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="analytics.html">Каталог</a></li>
+              <li><a href="contacts.html">Личный кабинет</a></li>
+              <li><a href="contacts.html">Администратор</a></li>
+            </ul>
+          </nav>
+          <div class="btn-into" id="cart-link">
+            <a href="./korzin.html">
+              <img src="./images/корзина22.png" alt="into" width="60" />
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+          <div class="dark">
+            <button class="lightdark">
+              <img
+                src="./images/index_icons/Antu_eclipse.svg.png"
+                alt="light"
+                width="30"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="account-section">
+      <div class="account-tabs">
+        <button class="tab-btn active" data-tab="login">Вход</button>
+        <button class="tab-btn" data-tab="register">Регистрация</button>
+        <button class="tab-btn" data-tab="profile">Профиль</button>
+        <button class="tab-btn" data-tab="orders">Мои заказы</button>
+      </div>
+
+      <div id="login" class="tab-content active">
+        <h2>Вход в личный кабинет</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Пароль</label>
+            <input type="password" id="login-password" required />
+          </div>
+          <button type="submit" class="btn-account">Войти</button>
+        </form>
+      </div>
+
+      <div id="register" class="tab-content">
+        <h2>Регистрация</h2>
+        <form id="register-form">
+          <div class="form-group">
+            <label for="reg-name">Имя</label>
+            <input type="text" id="reg-name" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-phone">Телефон</label>
+            <input type="tel" id="reg-phone" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Пароль</label>
+            <input type="password" id="reg-password" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-confirm">Подтвердите пароль</label>
+            <input type="password" id="reg-confirm" required />
+          </div>
+          <button type="submit" class="btn-account">Зарегистрироваться</button>
+        </form>
+      </div>
+
+      <div id="profile" class="tab-content">
+        <h2>Мой профиль</h2>
+        <div class="account-info">
+          <div class="info-card">
+            <h3>Личные данные</h3>
+            <div class="info-item">
+              <span class="info-label">Имя:</span>
+              <span id="profile-name">Валерия Меладзе</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span id="profile-email">Meladz@example.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Телефон:</span>
+              <span id="profile-phone">+7 (123) 456-78-90</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Адрес доставки</h3>
+            <div class="info-item">
+              <span class="info-label">Город:</span>
+              <span id="profile-city">Альметьевск</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Адрес:</span>
+              <span id="profile-address">ул.Бигаш, д. 123, кв. 45</span>
+            </div>
+            <button class="btn-account" id="edit-profile-btn">
+              Редактировать
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="orders" class="tab-content">
+        <h2>Мои заказы</h2>
+        <div class="orders-list">
+          <div class="order-card">
+            <div class="order-header">
+              <div>
+                <span class="order-number">Заказ #12345</span>
+                <span class="order-date">от 15.05.2023</span>
+              </div>
+              <span class="order-status status-completed">Выполнен</span>
+            </div>
+            <div class="order-items">
+              <div class="order-item">
+                <img
+                  src="./images/шанель.jpg"
+                  alt="Chanel Chance Eau Tendre"
+                  class="order-item-img"
+                />
+                <div class="order-item-details">
+                  <div class="order-item-name">Chanel Chance Eau Tendre</div>
+                  <div class="order-item-price">22 250₽ × 1</div>
+                </div>
+              </div>
+              <div class="order-item">
+                <img
+                  src="./images/гучи.webp"
+                  alt="GUCCI EAU DE PARFUM II"
+                  class="order-item-img"
+                />
+                <div class="order-item-details">
+                  <div class="order-item-name">GUCCI EAU DE PARFUM II</div>
+                  <div class="order-item-price">2 300₽ × 2</div>
+                </div>
+              </div>
+            </div>
+            <div class="order-total">Итого: 26 850₽</div>
+          </div>
+
+          <div class="order-card">
+            <div class="order-header">
+              <div>
+                <span class="order-number">Заказ #12344</span>
+                <span class="order-date">от 10.05.2023</span>
+              </div>
+              <span class="order-status status-processing">В обработке</span>
+            </div>
+            <div class="order-items">
+              <div class="order-item">
+                <img
+                  src="./images/живанши.jpg"
+                  alt="Givenchy Fragrance Resistant"
+                  class="order-item-img"
+                />
+                <div class="order-item-details">
+                  <div class="order-item-name">
+                    Givenchy Fragrance Resistant
+                  </div>
+                  <div class="order-item-price">8 354₽ × 1</div>
+                </div>
+              </div>
+            </div>
+            <div class="order-total">Итого: 8 354₽</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <img src="./images/index_icons/logomp.png" alt="" />
+            <p>
+              Мы не просто продаем ароматизаторы и парфюмерные композиции – мы
+              <br />стремимся сделать мир лучше и ароматнее!
+            </p>
+            <div class="social-links">
+              <a href="#">
+                <img src="images/index_icons/vk-icon.png" alt="ВК" width="40" />
+              </a>
+              <a href="#">
+                <img
+                  src="images/index_icons/whatsapp-icon.png"
+                  alt="WhatsApp"
+                  width="40"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/index_icons/instagram-icon.png"
+                  alt="Instagram"
+                  width="40"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Разделы</h3>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="analytics.html">Каталог</a></li>
+              <li><a href="contacts.html">Личный кабинет</a></li>
+              <li><a href="management.html">Панель администратора</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> г. Альметьевск, ул.
+                Ленина, 52
+              </li>
+              <li><i class="fas fa-phone"></i> +7 (919) 472-22-33</li>
+              <li><i class="fas fa-envelope"></i> aromat-almet@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 Духи.ру. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>
